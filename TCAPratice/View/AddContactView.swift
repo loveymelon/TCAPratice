@@ -6,13 +6,31 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 struct AddContactView: View {
+    
+    // @Bindable 변화 감지??
+    //    if #available(iOS 17.0, *) {
+    //        @Bindable var store: StoreOf<AddContactFeature>
+    //    } else {
+    //        @Perception.Bindable var store: StoreOf<AddContactFeature>
+    //    }
+    @Perception.Bindable var store: StoreOf<AddContactFeature>
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Form {
+            TextField("Name", text: $store.contact.name.sending(\.setName))
+            Button("Save") {
+                store.send(.saveButtonTapped)
+            }
+        }
+        .toolbar {
+            ToolbarItem {
+                Button("Cancel") {
+                    store.send(.cancelButtonTapped)
+                }
+            }
+        }
     }
-}
-
-#Preview {
-    AddContactView()
 }

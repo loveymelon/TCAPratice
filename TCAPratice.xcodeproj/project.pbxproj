@@ -15,6 +15,9 @@
 		DF5FCDD62C4E2317002D0C3C /* TCAPraticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5FCDD52C4E2317002D0C3C /* TCAPraticeUITests.swift */; };
 		DF5FCDD82C4E2317002D0C3C /* TCAPraticeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5FCDD72C4E2317002D0C3C /* TCAPraticeUITestsLaunchTests.swift */; };
 		DF5FCDE92C4E24D7002D0C3C /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = DF5FCDE82C4E24D7002D0C3C /* ComposableArchitecture */; };
+		DF5FCDEB2C4E27D4002D0C3C /* ContactsFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5FCDEA2C4E27D4002D0C3C /* ContactsFeature.swift */; };
+		DF5FCDEF2C4E3F93002D0C3C /* AddContactFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5FCDEE2C4E3F93002D0C3C /* AddContactFeature.swift */; };
+		DF5FCDF12C4E4086002D0C3C /* AddContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5FCDF02C4E4086002D0C3C /* AddContactView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,9 @@
 		DF5FCDD12C4E2317002D0C3C /* TCAPraticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TCAPraticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF5FCDD52C4E2317002D0C3C /* TCAPraticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCAPraticeUITests.swift; sourceTree = "<group>"; };
 		DF5FCDD72C4E2317002D0C3C /* TCAPraticeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCAPraticeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DF5FCDEA2C4E27D4002D0C3C /* ContactsFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsFeature.swift; sourceTree = "<group>"; };
+		DF5FCDEE2C4E3F93002D0C3C /* AddContactFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactFeature.swift; sourceTree = "<group>"; };
+		DF5FCDF02C4E4086002D0C3C /* AddContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +102,9 @@
 		DF5FCDB92C4E2315002D0C3C /* TCAPratice */ = {
 			isa = PBXGroup;
 			children = (
+				DF5FCDED2C4E3F74002D0C3C /* Container */,
+				DF5FCDEC2C4E3F68002D0C3C /* View */,
 				DF5FCDBA2C4E2315002D0C3C /* TCAPraticeApp.swift */,
-				DF5FCDBC2C4E2315002D0C3C /* ContentView.swift */,
 				DF5FCDBE2C4E2317002D0C3C /* Assets.xcassets */,
 				DF5FCDC02C4E2317002D0C3C /* Preview Content */,
 			);
@@ -127,6 +134,24 @@
 				DF5FCDD72C4E2317002D0C3C /* TCAPraticeUITestsLaunchTests.swift */,
 			);
 			path = TCAPraticeUITests;
+			sourceTree = "<group>";
+		};
+		DF5FCDEC2C4E3F68002D0C3C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DF5FCDBC2C4E2315002D0C3C /* ContentView.swift */,
+				DF5FCDF02C4E4086002D0C3C /* AddContactView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DF5FCDED2C4E3F74002D0C3C /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				DF5FCDEA2C4E27D4002D0C3C /* ContactsFeature.swift */,
+				DF5FCDEE2C4E3F93002D0C3C /* AddContactFeature.swift */,
+			);
+			path = Container;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,7 +291,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF5FCDBD2C4E2315002D0C3C /* ContentView.swift in Sources */,
+				DF5FCDF12C4E4086002D0C3C /* AddContactView.swift in Sources */,
 				DF5FCDBB2C4E2315002D0C3C /* TCAPraticeApp.swift in Sources */,
+				DF5FCDEB2C4E27D4002D0C3C /* ContactsFeature.swift in Sources */,
+				DF5FCDEF2C4E3F93002D0C3C /* AddContactFeature.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
